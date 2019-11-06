@@ -1,0 +1,50 @@
+.menu {
+  display: flex;
+  background-color: darkgray;
+}
+
+.menu > div {
+  width: 50%;
+  display: flex;
+  margin: 0;
+}
+
+.menu > .options > * {
+  width: auto;
+}
+
+.menu > .options > .custom-file {
+  overflow: hidden;
+}
+
+.menu > .options > .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.menu > .options > .dropdown > input {
+  cursor: default;
+}
+
+.menu > .options > .dropdown > .dropdown-content {
+  width:100%;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.menu > .options > .dropdown > .dropdown-content label {
+  word-break: break-word;
+}
+
+.menu > .options > .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+.menu > .output > button {
+  flex-grow: 1;
+  text-align: center;
+}
