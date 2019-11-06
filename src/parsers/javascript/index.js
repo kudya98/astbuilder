@@ -5,7 +5,7 @@ import ast2json from '../ast2json'
 
 const clearLoc = (obj) => {
   Object.keys(obj).forEach(key => {
-    if (key === 'loc') {
+    if (key === 'loc' || key === 'start' || key === 'end') {
       delete obj[key]
     } else if (obj[key] && typeof obj[key] === 'object') {
       clearLoc(obj[key])
