@@ -20,7 +20,6 @@ const javascript = (input, options) => {
       language: 'javascript',
       ...parse(input, babelParserOptions).program
     }
-    if (ast.directives && ast.directives.length === 0) delete ast.directives
     if (options && options.retainLines !== true) clearLoc(ast)
     const t2 = performance.now()
     const json = ast2json(ast)
