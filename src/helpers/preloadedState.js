@@ -2,7 +2,7 @@ import defaultPrograms from './defaultPrograms'
 import defaultOptions from './defaultOptions'
 
 const version = 1
-const options = defaultOptions
+const options = { ...defaultOptions }
 const input = { ...defaultPrograms }
 const lang = 'javascript'
 const theme = 'vs-dark'
