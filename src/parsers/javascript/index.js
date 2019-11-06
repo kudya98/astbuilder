@@ -1,7 +1,7 @@
 import { parse } from '@babel/parser'
 import babelParserOptions from '../../config/babelParser'
 import ast2xml from '../ast2xml'
-import ast2json from "../ast2json";
+import ast2json from '../ast2json'
 
 const clearLoc = (obj) => {
   Object.keys(obj).forEach(key => {
