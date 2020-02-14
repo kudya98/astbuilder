@@ -6,6 +6,9 @@ const LangOptions = ({ disabled, lang, onChange }) => {
       className='form-control' value={lang} onChange={onChange} disabled={disabled}
     >
       <option value='javascript'>javascript</option>
+      <option value='php'>php</option>
+      <option value='java'>java</option>
+      <option value='c'>c</option>
       {/* <option value='php'>php</option>
           <option value='java'>java</option> */}
     </select>

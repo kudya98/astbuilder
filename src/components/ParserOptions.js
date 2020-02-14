@@ -9,7 +9,7 @@ const ParserOptions = ({ options, disabled, onChange }) => {
     <div className='dropdown'>
       <input type='text' className='form-control' placeholder='Options' readOnly />
       {
-        Object.keys(options).length > 0 &&
+        options && Object.keys(options).length > 0 &&
           <div className='dropdown-content'>
             {
               Object.keys(options).map(key => (

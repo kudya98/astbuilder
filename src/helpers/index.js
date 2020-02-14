@@ -32,6 +32,12 @@ export function getLangByFileName (fileName) {
     case ('.js'): {
       return 'javascript'
     }
+    case ('.c'): {
+      return 'c'
+    }
+    case ('.java'): {
+      return 'java'
+    }
     case ('.php'): {
       return 'php'
     }

@@ -1,11 +1,15 @@
 const phpParserConfig = {
   parser: {
-    extractDoc: false,
+    extractDoc: true,
     php7: true,
     suppressErrors: false
   },
+  lexer: {
+    all_tokens: true,
+    comment_tokens: true
+  },
   ast: {
-    withPositions: false
+    withPositions: true
   }
 }
 

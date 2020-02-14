@@ -1,7 +1,10 @@
 const defaultOptions = {
   javascript: {
-    retainLines: false
+    retainLines: true
   },
+  java: { retainLines: true },
+  c: { retainLines: true },
+  php: { retainLines: true },
   xml: {},
   json: {}
 }

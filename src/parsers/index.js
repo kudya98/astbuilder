@@ -1,4 +1,7 @@
 import javascript from './javascript'
+import java from './java'
+import php from './php'
+import c from './c'
 import ast2src from './ast2src'
 
 const parser = (input, lang, options) => {
@@ -11,6 +14,15 @@ const parser = (input, lang, options) => {
     }
     case 'javascript': {
       return javascript(input, options)
+    }
+    case 'php': {
+      return php(input, options)
+    }
+    case 'java': {
+      return java(input, options)
+    }
+    case 'c': {
+      return c(input, options)
     }
     default: {
       return {

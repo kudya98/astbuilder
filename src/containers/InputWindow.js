@@ -20,7 +20,7 @@ const InputWindow = ({
   updateOutputType
 }) => {
   const [timer, setTimer] = useState(null)
-  const handleChange = (newValue) => {
+  const handleChange = async (newValue) => {
     startParsing()
     startParserWorker({
       input: newValue,

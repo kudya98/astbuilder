@@ -1,6 +1,7 @@
 import parser from '../parsers'
 
-onmessage = (e) => {
+onmessage = async (e) => {
   const { input, lang, options } = e.data
-  postMessage(parser(input, lang, options))
+  const result = await parser(input, lang, options)
+  postMessage(result)
 }
